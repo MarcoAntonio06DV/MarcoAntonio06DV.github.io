@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos - PowerGym</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'blue-primary': '#0D1B2A',
+            'blue-dark': '#0a1421',
+            'green-accent': '#32CD32',
+            'gray-light': '#1B263B',
+            'gray-dark': '#E0E1DD',
+          },
+          fontFamily: {
+             'sans': ['Open Sans', 'sans-serif'],
+             'montserrat': ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+   </script>
+</head>
+<body class="overflow-x-hidden">
+
+    <header id="header" class="bg-blue-primary bg-opacity-90 backdrop-blur-sm fixed w-full z-50 transition-all duration-300 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold tracking-wider text-white">IRON<span class="text-green-accent">FORCE</span></a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-white hover:text-green-accent">Início</a>
+                <a href="planos.html" class="nav-link text-white hover:text-green-accent">Planos</a>
+                <a href="loja.html" class="nav-link text-white hover:text-green-accent">Loja</a>
+            </nav>
+            <div class="flex items-center">
+                <button id="mobile-menu-button" class="md:hidden text-2xl text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-primary-dark flex-col items-center py-4">
+            <a href="index.html" class="block py-2 text-white hover:text-green-accent">Início</a>
+            <a href="planos.html" class="block py-2 text-white hover:text-green-accent">Planos</a>
+            <a href="loja.html" class="block py-2 text-white hover:text-green-accent">Loja</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="planos-section" class="py-20 bg-gray-light pt-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4 text-blue-primary"><span style="color: white;">Escolha seu</span> <span class="text-green-accent">Plano</span></h2>
+                <p class="max-w-2xl mx-auto text-gray-dark mb-12 text-lg">
+                    Oferecemos opções flexíveis para atender a todas as necessidades e objetivos.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-lg shadow-lg flex flex-col justify-between transform hover:scale-105 transition-transform duration-300" style="background-color: white;">
+                        <div>
+                            <i class="fas fa-fist-raised text-5xl text-blue-primary mb-6"></i>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-dark" style="color: black;">Plano Essencia</h3>
+                            <p class="text-5xl font-extrabold text-green-accent mb-6" style="color: black;">R$100<span class="text-lg text-gray-dark" style="color: black;">/mês</span></p>
+                            <ul class="text-gray-dark text-left space-y-3 mb-8">
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> Acesso à Musculação</li>
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> Aulas de Cardio</li>
+                                <li class="flex items-center text-gray-500" style="color: black;"><i class="fas fa-times-circle text-gray-400 mr-3"></i> Treino Personalizado</li>
+                                <li class="flex items-center text-gray-500" style="color: black;"><i class="fas fa-times-circle text-gray-400 mr-3"></i> Acompanhamento Nutricional</li>
+                            </ul>
+                        </div>
+                        <a href="contato.html" class="w-full bg-blue-primary text-white font-bold py-3 rounded-full hover:bg-blue-dark transition-colors shadow-md">
+                            Assinar Essencia
+                        </a>
+                    </div>
+
+                    <div class="p-8 rounded-lg shadow-xl border-4 border-green-accent flex flex-col justify-between transform hover:scale-105 transition-transform duration-300 relative" style="background-color: white;">
+                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-green-accent text-white text-sm font-bold px-4 py-1 rounded-full shadow-md">MAIS POPULAR</span>
+                        <div>
+                            <i class="fas fa-medal text-5xl text-green-accent mb-6"></i>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-dark" style="color: black;">Plano ALDAY</h3>
+                            <p class="text-5xl font-extrabold text-blue-primary mb-6" style="color: black;">R$150<span class="text-lg text-gray-dark" style="color: black;">/mês</span></p>
+                            <ul class="text-gray-dark text-left space-y-3 mb-8">
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> Acesso Total à Academia</li>
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> Todas as Aulas em Grupo</li>
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> 1 Sessão de PT/mês</li>
+                                <li class="flex items-center text-gray-500" style="color: black;"><i class="fas fa-times-circle text-gray-400 mr-3"></i> Acompanhamento Nutricional</li>
+                            </ul>
+                        </div>
+                        <a href="contato.html" class="w-full bg-green-accent text-white font-bold py-3 rounded-full hover:bg-green-dark transition-colors shadow-md">
+                            Assinar ALDAY
+                        </a>
+                    </div>
+
+                    <div class="p-8 rounded-lg shadow-lg flex flex-col justify-between transform hover:scale-105 transition-transform duration-300" style="background-color: white;">
+                        <div>
+                            <i class="fas fa-crown text-5xl text-blue-primary mb-6"></i>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-dark" style="color: black;">Plano Anual</h3>
+                            <p class="text-5xl font-extrabold text-green-accent mb-6" style="color: black;">R$1800<span class="text-lg text-gray-dark" style="color: black;">/ano</span></p>
+                            <ul class="text-gray-dark text-left space-y-3 mb-8">
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> Acesso Total e VIP</li>
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> Todas as Aulas + Prioridade</li>
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> Treino Personalizado Ilimitado</li>
+                                <li class="flex items-center" style="color: black;"><i class="fas fa-check-circle text-green-accent mr-3"></i> Acompanhamento Nutricional</li>
+                            </ul>
+                        </div>
+                        <a href="contato.html" class="w-full bg-blue-primary text-white font-bold py-3 rounded-full hover:bg-blue-dark transition-colors shadow-md">
+                            Assinar Anual
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-primary py-8 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 IronForce. Todos os direitos reservados.</p>
+            <div class="flex justify-center space-x-6 mt-4 text-xl">
+                <a href="#" class="hover:text-green-accent transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/marco.oliveira3009/" class="hover:text-green-accent transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-green-accent transition-colors"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Iron Forge Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header" class="header-padrao">
+        <div class="container-header">
+            <a href="index.html" class="logo-header">IRON <span class="logo-destaque">FORGE</span></a>
+            <nav class="nav-principal">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="planos.html" class="nav-link">Planos</a>
+                <a href="loja.html" class="nav-link">Loja</a>
+            </nav>
+            <button id="mobile-menu-button" class="md-hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu-links">
+            <a href="index.html">Início</a>
+            <a href="planos.html">Planos</a>
+            <a href="loja.html">Loja</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-loja">
+            <h2 class="nome">NOSSA LOJA DE SUPLEMENTOS</h2>
+            <div class="produtos">
+                <div class="produto-item">
+                    <img src="../image/wheyconcentrado.jpg" alt="Whey Protein">
+                    <h3>Whey Protein Concentrado</h3>
+                    <p class="preco">R$ 89,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto-item">
+                    <img src="../image/creatina.jpg" alt="Creatina">
+                    <h3>Creatina Monohidratada</h3>
+                    <p class="preco">R$ 49,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto-item">
+                    <img src="../image/bcaa.jpg" alt="BCAA">
+                    <h3>BCAA 2:1:1 (120 Cápsulas)</h3>
+                    <p class="preco">R$ 35,50</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto-item">
+                    <img src="../image/pretreino.jpg" alt="Pré-treino">
+                    <h3>Pré-Treino Explosivo</h3>
+                    <p class="preco">R$ 75,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy;2025 IRON FORGE FITNESS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
