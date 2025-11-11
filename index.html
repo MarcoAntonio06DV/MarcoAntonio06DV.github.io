@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>IRON FORGE FITNESS</title>
+</head>
+<body>
+
+    <header id="header" class="header-padrao">
+        <div class="container-header">
+            <a href="index.html" class="logo-header">IRON <span class="logo-destaque">FORGE</span></a>
+            <nav class="nav-principal">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="planos.html" class="nav-link">Planos</a>
+                <a href="loja.html" class="nav-link">Loja</a>
+            </nav>
+            <button id="mobile-menu-button" class="md-hidden">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu-links">
+            <a href="index.html">Início</a>
+            <a href="planos.html">Planos</a>
+            <a href="loja.html">Loja</a>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop" alt="Pessoa treinando na academia" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h2>O <span class="destaque">FERRO</span> SE FORJA NO FOGO, O CORPO NO <span class="destaque">TREINO</span></h2>
+        </div>
+    </section>
+    
+    <main id="corpo">
+        <div class="container">
+            <section class="card">
+                <h2 class="titulo">SOBRE NÓS</h2>
+                <h3 class="texto">Acreditamos que todo treino é uma oportunidade de superar limites e conquistar uma versão melhor de si mesmo. Nossa academia foi feita para inspirar, motivar e guiar você rumo aos seus objetivos, seja ganhar força, melhorar a saúde ou transformar completamente o seu corpo e sua mente. Aqui, cada esforço vale a pena e cada conquista é celebrada.</h3>
+            </section>
+
+            <section id="servicos">
+                <h2 class="titulo">NOSSOS SERVIÇOS</h2>
+                <div class="container-servicos">
+                    <div class="servico">
+                        <h3>Musculação</h3>
+                        <p>Equipamentos modernos e área de peso livre</p>
+                    </div>
+                    <div class="servico">
+                        <h3>Treinamento Funcional</h3>
+                        <p>Exercícios que simulam movimentos do dia a dia, usando cordas, caixas, elásticos etc.</p>
+                    </div>
+                    <div class="servico">
+                        <h3>Artes Marciais e Lutas</h3>
+                        <ul>
+                            <li>Jiu-Jitsu</li>
+                            <li>Muay Thai</li>
+                            <li>Boxe</li>
+                            <li>MMA</li>
+                        </ul>
+                    </div>
+                    <div class="servico">
+                        <h3>Personal Trainer</h3>
+                        <p>Atendimento individualizado para montar treinos específicos</p>
+                    </div>
+                    <div class="servico">
+                        <h3>Avaliação Física</h3>
+                        <p>Medição de composição corporal (gordura, massa magra, IMC, etc).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Contato" class="card">
+                <h2 class="titulo">CADASTRE-SE</h2>
+                <form id="form-contato">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    <input type="radio" id="Problemas" name="Problemas 01">
+                    <label for="Problemas">Problemas</label>
+                    <label for="e-mail">Email:</label>
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                    
+                    <label for="mensagem">Qual seu principal objetivo na academia?:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Descreva seu interesse(opcional)"></textarea>
+
+                    <div class="botoes">
+                      <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+            <p>&copy;2025 IRON FORGE FITNESS. Todos os direitos reservados.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
